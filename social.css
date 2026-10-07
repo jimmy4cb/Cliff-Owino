@@ -1,0 +1,113 @@
+.social-block {
+  width: min(100%, 590px);
+  margin: 0 0 34px;
+  text-align: left;
+}
+
+.social-block h3 {
+  margin: 0 0 12px;
+  color: var(--blue-pale);
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 11px;
+  color: var(--white);
+  background: #1d2637;
+  border: 1px solid rgb(139 180 255 / 22%);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.social-icon {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.social-icon-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+.social-icon-facebook,
+.social-icon-x {
+  fill: currentColor;
+  stroke: none;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  background: #263652;
+  border-color: var(--lime);
+}
+
+.social-links a span {
+  color: var(--blue-muted);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.social-links a > span > span {
+  color: var(--blue-muted);
+}
+
+.capture-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.capture-social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  color: var(--white);
+  background: rgb(255 255 255 / 8%);
+  border: 1px solid rgb(139 180 255 / 24%);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.capture-social-links a:hover,
+.capture-social-links a:focus-visible {
+  background: rgb(139 180 255 / 18%);
+  border-color: var(--lime);
+}
+
+@media (max-width: 620px) {
+  .social-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .capture-social-links {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .capture-social-links a {
+    justify-content: center;
+  }
+}
